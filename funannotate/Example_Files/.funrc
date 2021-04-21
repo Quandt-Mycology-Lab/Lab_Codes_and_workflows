@@ -1,0 +1,42 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+source /projects/caqu8258/software/miniconda2/bin/activate
+source activate fun
+export PATH=/projects/caqu8258/software/miniconda2/envs/fun/bin/ete3_apps/bin:$PATH
+export PATH=/projects/caqu8258/software/build/gm_et_linux_64/gmes_petap:$PATH
+export PATH=/projects/caqu8258/software/build/funannotate:$PATH
+export PATH=$PATH:/projects/caqu8258/software/build/RepeatMasker
+export PATH=$PATH:/projects/caqu8258/software/build/nseg
+export PATH=/projects/caqu8258/software/build/ncbi-blast-rmblast-2.2.28+/bin:$PATH
+export PATH=/projects/caqu8258/software/build/RepeatModeler-open-1.0.11:$PATH
+#ml perl
+
+ln -sf /projects/caqu8258/software/miniconda2/envs/fun/bin/fasta36 /projects/caqu8258/software/miniconda2/envs/fun/bin/fasta
+
+export REPEATMASKER_LIB_DIR=/projects/caqu8258/software/build/RepeatMasker/Libraries
+export MAFFT_BINARIES=/projects/caqu8258/software/miniconda2/envs/fun/bin/ete3_apps/bin
+export PASAHOME=/projects/caqu8258/software/miniconda2/envs/fun/opt/pasa-2.3.3
+export TRINITYHOME=/projects/caqu8258/software/miniconda2/envs/fun/opt/trinity-2.6.6
+export EVM_HOME=/projects/caqu8258/software/miniconda2/envs/fun/opt/evidencemodeler-1.1.1
+export AUGUSTUS_CONFIG_PATH=/projects/caqu8258/software/miniconda2/envs/fun/config
+export BAMTOOLS_PATH=/projects/caqu8258/software/miniconda2/envs/fun/bin/bamtools
+export GENEMARK_PATH=/projects/caqu8258/software/build/gm_et_linux_64/gmes_petap
+export FUNANNOTATE_DB=/projects/caqu8258/software/local/DB
+unset BUSCO_CONFIG_FILE
+#Do we need to set these??
+
+#PATH="/home/caqu8258/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PERL5LIB="/home/caqu8258/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+#PERL_LOCAL_LIB_ROOT="/home/caqu8258/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+#PERL_MB_OPT="--install_base \"/home/caqu8258/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/home/caqu8258/perl5"; export PERL_MM_OPT;
+#export BUSCO_CONFIG_FILE=/projects/caqu8258/software/local/bin/busco/config/config.ini
+#export AUGUSTUS_CONFIG_PATH=/projects/caqu8258/software/build/augustus-3.2.2/config/
+export PATH=$PATH:/projects/caqu8258/software/local/bin
