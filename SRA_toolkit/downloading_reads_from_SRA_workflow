@@ -1,11 +1,16 @@
-****By Alisha Q.**** Updated 06/24/2019
- ##### Fasterq-dump ########
- #Install or load sratoolkit v2.9.1 or higher, I used 2.9.6
- Option 1:
- fasterq-dump --skip-technical SRR7535523 -e 8
+****By Alisha Q.**** Updated 06/03/2021 by Tina M
+ ##### Fasterq-dump: SRAtoolkit v2.11.0 ########
+ 
+ #You may need to run this command first to stop your home directory from filling with temporary files: #stop home directory from filling up with temp files
+'''
+echo '/repository/user/main/public/root = "/scratch/summit/$user/sra-cache"' > ~/.ncbi/user-settings.mkfg'
+'''
+ Option 1:#stop home directory from filling up with temp files
+echo '/repository/user/main/public/root = "/scratch/summit/chjo1591/sra-cache"' > ~/.ncbi/user-settings.mkfg
+/projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 --skip-technical SRR7535523 -e 8
  
  Option 2:
- fasterq-dump --skip-technical SRR7535523 -e 8 -O /scratch/user/My_download/
+/projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 --skip-technical SRR7535523 -e 8 -O /scratch/user/My_download/
  
  #Files should begin downloading immediately. The time varies A LOT by the number of reads you are downloading.
  #--skip-technical = Technical reads (if present) will be removed. 
