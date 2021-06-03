@@ -2,9 +2,9 @@
  ##### Fasterq-dump: SRAtoolkit v2.11.0 ########
  
  #You may need to run this command first to stop your home directory from filling with temporary files: #stop home directory from filling up with temp files
-'''
+```
 echo '/repository/user/main/public/root = "/scratch/summit/$user/sra-cache"' > ~/.ncbi/user-settings.mkfg'
-'''
+```
  Option 1:#stop home directory from filling up with temp files
 echo '/repository/user/main/public/root = "/scratch/summit/chjo1591/sra-cache"' > ~/.ncbi/user-settings.mkfg
 /projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 --skip-technical SRR7535523 -e 8
