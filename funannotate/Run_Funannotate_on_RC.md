@@ -6,7 +6,7 @@ export GENEMARK_PATH=/projects/caqu8258/software/build/funannotate_1.8.8/gmes_li
 ```
 2. Load the "fun" conda environment with your funrc source file
 ```
-source ~./funrc
+source ~/.funrc
 ```
 
 3. Load the singularity module
