@@ -10,7 +10,7 @@
 #SBATCH --mail-user=email@colorado.edu
 
 # Updated:	   03 June 2021
-# Purpose: 	   Trimmomatic with Nextera adapters
+# Purpose: 	   Trimmomatic 0.39 with Nextera adapters
 
 # purge all existing modules
 module purge
