@@ -3,7 +3,7 @@
 #SBATCH --time=23:59:00                       # Max wall time
 #SBATCH --qos=normal                   		 # Specify testing QOS
 #SBATCH --partition=shas            		# Specify Summit haswell nodes
-#SBATCH --ntasks=12                            # Number of tasks per job
+#SBATCH --ntasks=24                            # Number of tasks per job
 #SBATCH --job-name=species_spades       # Job submission name
 #SBATCH --output=spades_species.%j.out  # Output file name with Job ID
 #SBATCH --mail-type=END,FAIL,TIME_LIMIT,TIME_LIMIT_90
