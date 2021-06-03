@@ -4,11 +4,11 @@
 ****By Alisha Q.**** 
 Updated 06/03/2021 by Tina Melie
  
- You may need to run this command first to stop your home directory from filling with temporary files: #stop home directory from filling up with temp files
+Optional: You may need to run this command first to stop your home directory from filling with temporary files.
 ```
 echo '/repository/user/main/public/root = "/scratch/summit/$USER/sra-cache"' > ~/.ncbi/user-settings.mkfg'
 ```
-Then run fasterq-dump
+Run fasterq-dump:
 ```
 /projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 --skip-technical SRR7535523 -e 8 --temp /scratch/summit/$USER/temp
  ```
