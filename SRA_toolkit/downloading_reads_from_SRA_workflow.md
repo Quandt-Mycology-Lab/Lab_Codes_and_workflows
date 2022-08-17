@@ -10,7 +10,7 @@ echo '/repository/user/main/public/root = "/scratch/summit/$USER/sra-cache"' > ~
 ```
 Run fasterq-dump:
 ```
-/projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 SRR5206992 --skip-technical --split-files --temp /scratch/summit/chjo1591/temp --outdir output_dir --threads 12 -p
+/projects/caqu8258/software/build/sratoolkit.2.11.0-ubuntu64/bin/fasterq-dump.2.11.0 SRR5206992 --skip-technical --split-files --temp /scratch/summit/$USER/temp --outdir output_dir --threads 12 -p
  ```
  Files should begin downloading immediately. The time varies A LOT based on the number of reads you are downloading.
  ```
