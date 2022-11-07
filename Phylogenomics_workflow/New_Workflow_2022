@@ -61,16 +61,16 @@ cd muscleout/
 
 5. Run Clipkit using Load Balancer:
 #Create lb file
-
+./create_Clipkit.sh > lb_cmd_clipkit
 
 #Prepare and run your slurm
-sbatch 
+sbatch lb_clipkit_slurm.sh  
 
 mkdir trimmed
-mv 
+mv *.out.clipkit trimmed/.
 
 6. Create expected file:
-cat trimmed/*.fasta.out.trim | grep "^>" | tr "|" "\t" | cut -f 1 | sort | uniq > expected.txt
+cat *.fasta.out.clipkit | grep "^>" | tr "|" "\t" | cut -f 1 | sort | uniq > expected.txt
 
 head expected.txt
 >Acema
