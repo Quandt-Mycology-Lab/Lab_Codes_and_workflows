@@ -59,15 +59,15 @@ mkdir muscleout
 mv *.fasta.out muscleout/.
 cd muscleout/
 
-5. Run trimal using Load Balancer:
+5. Run Clipkit using Load Balancer:
 #Create lb file
-./create_TrimAL.sh > lb_cmd_trimal
+
 
 #Prepare and run your slurm
-sbatch LB_trimal_slurm.sh
+sbatch 
 
 mkdir trimmed
-mv *.out.trim trimmed/.
+mv 
 
 6. Create expected file:
 cat trimmed/*.fasta.out.trim | grep "^>" | tr "|" "\t" | cut -f 1 | sort | uniq > expected.txt
