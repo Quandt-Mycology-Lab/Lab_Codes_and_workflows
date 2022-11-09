@@ -1,0 +1,66 @@
+For complete primer lists, see: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5066162/table/tbl2/
+
+ITS:
+		
+ITS1F		CTTGGTCATTTAGAGGAAGTAA (Gardes and Bruns 1993: Gardes M, Bruns TD. 1993. ITS primers with enhanced specificity for basidiomycetes—application to the identification of mycorrhizae and rusts. Molecular Ecology, 2, pp.113–118.
+)
+ITS4		TCCTCCGCTTATTGATATGC (White et al 1990: White T, Bruns TD, Lee S, Taylor J. 1990. Amplification and direct sequencing of fungal ribosomal RNA genes for phylogenetics. In: Innis MA, Gelfand DH, Sninsky JJ, White TJ, eds. PCR protocols: a guide to methods and applications.San Diego, California: Academic Press. 315–322 p.)
+
+LSU:
+LROR		ACCCGCTGAACTTAAGC
+LR5		TCCTGAGGGAAACTTCG
+
+SSU: NS1/NS4 or if this pair doesn't work NS1/NS2 (White et al. 1990)
+NS1
+GTAGTCATATGCTTGTCTC
+NS2
+GGCTGCTGGCACCAGACTTGC
+NS4
+CTTCCGTCAATTCCTTTAAG
+
+
+mtSSU: mtSSU1/mtSSU3R (Zoller et al. 1999) Zoller, Stefan; Scheidegger, Christoph; Sperisen, Christoph. PCR primers for the amplification of mitochondrial small subunit ribosomal DNA of lichen-forming ascomycetes. Lichenologist (London), 31. 5 (1999): 511-516 
+
+mrSSUl 5'-AGCAGTGAGGAATATTGGTC-3
+mrSSU3R 5'-ATGTGGCACGTCTATAGCCC-3'
+
+MCM7: Mcm7-709for/Mcm7-1348rev (Schmitt et al. 2009) Schmitt, I., Crespo, A., Divakar, P.K., Fankhauser, J.D., Herman-Sackett, E., Kalb, K., Nelsen, M.P., Nelson, N.A., Rivas-Plata, E., Shimp, A.D. and Widhelm, T., 2009. New primers for promising single-copy genes in fungal phylogenetics and systematics. Persoonia, 23, p.35.
+Mcm7-709for
+For
+ACI MGI GTI TCV GAY GTH AAR CC
+Mcm7-1348rev
+Rev
+GAY TTD GCI ACI CCI GGR TCW CCC AT
+
+
+TEF1: EF1-983F/EF1-1567R and EF1-983F/EF1-2218R (the second reverse primers gives a longer sequence but often making a contig out of the forward and reverse reads fails, so better to also sequence the 1567R reverse read so there is overlap) (Rehner & Buckley 2005) Stephen A. Rehner & Ellen Buckley (2005) A Beauveria phylogeny inferredfrom nuclear ITS and EF1-α sequences: evidence for cryptic diversification and links to Cordycepsteleomorphs, Mycologia, 97:1, 84-98, DOI: 10.1080/15572536.2006.11832842
+EF1T (5’-ATGGGTAAGGARGACAAGAC)
+1567R (5’-ACHGTRCCRATACCACCSATCTT)
+983F (5’-GCYCCYGGHCAYCGT-GAYTTYAT)
+2218R (5’-ATGACACCRA-CRGCRACRGTYTG)
+
+RPB1: RPB1-Af/RPB1-Cr (Stiller & Hall 1997, Matheny et al. 2002)
+Stiller JW, Hall BD. 1997. The origin of red algae:Implications for plastid evolution. Proc Natl Acad SciUSA 94:4520–4525, doi:10.1073/pnas.94.9.4520
+Matheny PB, Liu YJ, Ammirati JF, Hall BD. 2002. Using RPB1sequences to improve phylogenetic inference amongmushrooms (Inocybe, Agaricales). Am J Bot 89:688–698
+
+RPB1-Af (5’GAKTGTCCKGGWCATTTTGG)
+RPB1-Af
+GAR TGY CCD GGD CAY TTY GG
+
+RPB1-Cr
+CCN GCD ATN TCR TTR TCC ATR TA
+
+
+
+RPB2: fRPB2-5F/fRPB2-7cR (Liu et al. 1999) Liu, Y.L., Whelen, S., Hall, B.D., 1999. Phylogenetic relationships among ascomycetes: evidence from an RNA polymerase II subunit. Mol. Biol. Evol. 16, 1799–1808.
+RPB2-f5F
+GAY GAY MGW GAT CAY TTY GG
+
+fRPB2-7cR (MGKQAMG) 5’-CCCATRGCT TGYTTR CCCAT-3’
+
+
+bTUB: TUB2Fd/TUB4Rd (Aveskamp et al. 2009). Woudenberg JHC, Aveskamp MM, de Gruyter J, Spiers AG, Crous PW. (2009) Multiple Didymella teleomorphs are linked to the Phoma clematidina morphotype. Persoonia 22: 56–62. 10.3767/003158509X427808
+
+TUB2Fd (5′-GTB CAC CTY CAR ACC GGY CAR TG – 3′)
+
+TUB4Rd (5′-CCR GAY TGR CCR AAR ACR AAG TTG TC – 3′)
