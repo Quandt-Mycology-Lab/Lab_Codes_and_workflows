@@ -1,0 +1,10 @@
+#Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+#User specific aliases and functions
+
+source /projects/caqu8258/software/miniconda2/bin/activate
+source activate protortho6
+
