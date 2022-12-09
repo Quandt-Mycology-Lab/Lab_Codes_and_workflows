@@ -1,0 +1,18 @@
+#Unzip all the gzipped files in a directory
+gzip -d *.gz
+
+#Count the number of sequences in a fasta file
+cat yourseqs.fas | grep \> | wc -l
+
+#See ownership, permissions, timestamp of files in a directory
+ll
+
+#See ownership, permissions, timestamp of files in a directory in time-reversed order (i.e. most recent at bottom)
+ll -tr
+
+#Find out path to where you are
+pwd
+
+#Find path to a program in your PATH
+which programname
+
