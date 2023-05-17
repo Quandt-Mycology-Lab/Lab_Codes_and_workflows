@@ -18,8 +18,8 @@ module load singularity
 4. Run Funannotate workflow using format below - see workflow file for specific usage examples
 
 ```
-singularity run  --bind /scratch/summit /projects/caqu8258/software/build/funannotate_1.8.8/funannotate.sif funannotate annotate
-singularity run  --bind /scratch/summit /projects/caqu8258/software/build/funannotate_1.8.8/funannotate.sif funannotate predict
+singularity run  --bind /scratch/alpine /projects/caqu8258/software/build/funannotate_1.8.15/funannotate_v1_8_15.sif funannotate annotate
+singularity run  --bind /scratch/alpine /projects/caqu8258/software/build/funannotate_1.8.15/funannotate_v1_8_15.sif  funannotate predict
 
 ```
 
