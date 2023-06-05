@@ -19,3 +19,5 @@ Your node can be accessed by adding the following flags to your job scripts, res
 3. A general note on job scheduling for Blanca: All blanca jobs are scheduled from the same login nodes that you use to schedule Alpine jobs. The difference is that before using "sbatch" or "sinteractive" to start a job, you'll first need to "module load slurm/blanca" on the login node, in order to activate the Blanca Slurm environment.
  
 4. The Blanca nodes differ from Alpine in that they presently have the RedHat7 operating system, whereas Alpine has Redhat8. What this means is that Blanca uses the older software modules that were present on Summit (which was also a RedHat7 system). This year we are planning to update the Blanca nodes to Redhat8, after which they will share the same modules with Alpine. In the meantime, workflows that were previously used on Summit should be valid on Blanca. I can assist where needed with transitioning workflows; otherwise, simply updating Summit jobs scripts with the partition/account/qos noted above is probably the most straightforward way to get started on Blanca.
+
+5. You cannot use /scratch/ . You must use /rc_scratch/identikey/
