@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --time=168:00:00                        # Max wall time DD:hh:mm:ss
-#SBATCH --qos=blanca-curc                          # Specify testing QOS
-#SBATCH --partition=blanca-curc               # Specify Summit haswell nodes
-#SBATCH --ntasks=15                              # Number of tasks per job
-#SBATCH --account=blanca-curc
-#SBATCH --cpus-per-task=6
+#SBATCH --qos=blanca-qsmicrobes                          # Specify testing QOS
+#SBATCH --partition=blanca-qsmicrobes               # Specify Summit haswell nodes
+#SBATCH --ntasks=25                              # Number of tasks per job
+#SBATCH --account=blanca-qsmicrobes
+#SBATCH --cpus-per-task=2
 #SBATCH --job-name=raxml        # Job submission name
-#SBATCH --output=qblanca_Leotio_Apr_2023_raxml_15tasks_3cpus.%j.out   # Output file name with Job ID../
+#SBATCH --output=qblanca_Leotio_Apr_2023_raxml_15tasks_2cpus.%j.out   # Output file name with Job ID../
 #SBATCH --mail-type=BEGIN,END,FAIL,TIME_LIMIT,TIME_LIMIT_90
 #SBATCH --mail-user=alisha.quandt@colorado.edu
 
