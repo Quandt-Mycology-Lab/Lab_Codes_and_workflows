@@ -11,7 +11,7 @@ module load slurm/blanca
 #You cannot run blanca jobs from /scratch/your_identikey/
 
 #Our lab members have non-preemptable access to your node, which means you can run jobs of up to 7 days in length without interruption.
-#This node (bnode0510) has 56 cores and 500 G of RAM. Note that presently the node has 2x hyperthreading enabled, which allows up to 2 tasks to share a single core. What this means fis that Slurm "sees" 56*2=112 cores on the node. Hyperthreading typically leads to more efficient jobs because it takes advantage of cores that aren't being 100% used by allowing jobs to share them.
+#This node (bnode0510) has 56 cores and 500 G of RAM. Note that presently the node has 2x hyperthreading enabled, which allows up to 2 tasks to share a single core. What this means is that Slurm "sees" 56*2=112 cores on the node. Hyperthreading typically leads to more efficient jobs because it takes advantage of cores that aren't being 100% used by allowing jobs to share them.
 
 cd /rc_scratch/your_identikey/
 
