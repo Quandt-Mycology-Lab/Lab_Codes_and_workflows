@@ -1,0 +1,7 @@
+#Welcome to Blanca
+
+#Load the blanca environment
+
+module load slurm/blanca      
+#ignore any weird messages you get about slurm/alpine
+
