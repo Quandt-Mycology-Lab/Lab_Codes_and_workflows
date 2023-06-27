@@ -20,3 +20,18 @@ cd /rc_scratch/your_identikey/
 
 #In addition to having priority access to your node, you also have preemptable access to all ~200 Blanca nodes
 #This means that you can run jobs of up to 24 hours on any nodes on Blanca for which you don't have priority access (i.e., other groups' nodes).
+#To do this first type:
+
+sinfo -a
+
+#You can see the characteristics of specific nodes (including the partition they are in), by typing 
+
+scontrol show <nodename>
+
+#Then change slurm headings to:
+#SBATCH --partition=<name-of-partition-you-want-to-run-on>
+#SBATCH --account=blanca-curc
+#SBATCH --qos=preemptable
+
+#Where <name-of-partition-you-want-to-run-on> is node you want based on "sinfo -a"
+
