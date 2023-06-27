@@ -10,4 +10,13 @@ module load slurm/blanca
 #They are: /home/your_identikey/ , /projects/your_identikey/ , or /rc_scratch/your_identikey/
 #You cannot run blanca jobs from /scratch/your_identikey/
 
+#Our lab members have non-preemptable access to your node, which means you can run jobs of up to 7 days in length without interruption.
+#This node (bnode0510) has 56 cores and 500 G of RAM. Note that presently the node has 2x hyperthreading enabled, which allows up to 2 tasks to share a single core. What this means fis that Slurm "sees" 56*2=112 cores on the node. Hyperthreading typically leads to more efficient jobs because it takes advantage of cores that aren't being 100% used by allowing jobs to share them.
 
+cd /rc_scratch/your_identikey/
+
+#Now you can submit a job to node bnode0510 using normal "sbatch" and other slurm commands. See this directory for a slurm template to use bnode0510
+#If you run "squeue" you will see the blanca nodes now (unlike when you are in alpine)
+
+#In addition to having priority access to your node, you also have preemptable access to all ~200 Blanca nodes
+#This means that you can run jobs of up to 24 hours on any nodes on Blanca for which you don't have priority access (i.e., other groups' nodes).
