@@ -3,7 +3,11 @@
 #Load the blanca environment
 
 module load slurm/blanca      
+
 #ignore any weird messages you get about slurm/alpine
 
 #You can run blanca jobs from three locations only.
-#They are: /home/your_identikey/ , /projects/your_identikey/ , or /
+#They are: /home/your_identikey/ , /projects/your_identikey/ , or /rc_scratch/your_identikey/
+#You cannot run blanca jobs from /scratch/your_identikey/
+
+
