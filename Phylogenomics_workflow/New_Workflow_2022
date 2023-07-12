@@ -59,12 +59,12 @@ mkdir muscleout
 mv *.fasta.out muscleout/.
 cd muscleout/
 
-5. Run Clipkit using Load Balancer:
+5. Run trimAL using Load Balancer:
 #Create lb file
-./create_Clipkit.sh > lb_cmd_clipkit
+./create_trimal.sh > lb_cmd_trimal
 
 #Prepare and run your slurm
-sbatch lb_clipkit_slurm.sh  
+sbatch LB_trimal_slurm_2023.sh  
 
 mkdir trimmed
 mv *.out.clipkit trimmed/.
