@@ -61,7 +61,7 @@ cd muscleout/
 
 5. Run trimAL using Load Balancer:
 #Create lb file
-./create_trimal.sh > lb_cmd_trimal
+./create_TrimAL.sh > lb_cmd_trimal
 
 #Prepare and run your slurm
 sbatch LB_trimal_slurm_2023.sh  
