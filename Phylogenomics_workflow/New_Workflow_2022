@@ -67,11 +67,11 @@ cd muscleout/
 sbatch LB_trimal_slurm_2023.sh  
 
 mkdir trimmed
-mv *.out.clipkit trimmed/.
+mv *.out.trim trimmed/.
 cd trimmed
 
 6. Create expected file:
-cat *.fasta.out.clipkit | grep "^>" | tr "|" "\t" | cut -f 1 | sort | uniq > expected.txt
+cat *.fasta.out.trim | grep "^>" | tr "|" "\t" | cut -f 1 | sort | uniq > expected.txt
 
 head expected.txt
 >Acema
