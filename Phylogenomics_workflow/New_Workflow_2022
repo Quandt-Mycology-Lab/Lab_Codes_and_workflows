@@ -88,6 +88,11 @@ head expected.txt
 7. Now, concatenate your aligned files:
 module load perl
 #####It is imperative that you load perl first, otherwise you will get an error. The default perl doesn't work with this program.#####
+### active the "self-contained" perl environment that supports bio-perl
+module purge
+module load anaconda
+conda activate /projects/caqu8258/software/miniconda2/envs/bioperl_v1
+
 
 perl ./combine_fasaln_v2023.pl -o allseqs.fas -of fasta -d ./trimmed/ --expected expected.txt
 
