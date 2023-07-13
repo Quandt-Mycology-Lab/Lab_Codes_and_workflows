@@ -8,7 +8,7 @@ my $iformat = 'fasta';
 my $oformat = 'fasta';
 my $outfile = 'allseqs.fas';
 my $ext = 'fasta.out.trim';
-my $dir;
+my $dir = './';
 my @expected;
 my $expected_file;
 my $debug ;
