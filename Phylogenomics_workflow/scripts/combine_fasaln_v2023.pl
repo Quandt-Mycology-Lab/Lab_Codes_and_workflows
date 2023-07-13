@@ -7,7 +7,7 @@ use Getopt::Long;
 my $iformat = 'fasta';
 my $oformat = 'fasta';
 my $outfile = 'allseqs.fas';
-my $ext = 'fasta.out.clipkit';
+my $ext = 'fasta.out.trim';
 my $dir;
 my @expected;
 my $expected_file;
