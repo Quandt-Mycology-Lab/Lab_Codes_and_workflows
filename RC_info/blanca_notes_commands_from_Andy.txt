@@ -1,0 +1,15 @@
+sinteractive --partition=blanca-qsmicrobes --account=blanca-qsmicrobes --qos=blanca-qsmicrobes  #Get an interactive node to test module loading etc. on blanca.
+
+sinfo -a
+
+qos=preemptable, partition=blanca or partition=blanca-nso, time <24 hours
+
+
+scontrol show node
+
+sacct --allusers --partition=blanca-qsmicrobes --starttime=2023-07-01 -X --format=user,jobid,jobname,qos,alloccpus,state
+
+module load slurmtools
+suacct blanca-qsmicrobes 30
+
+squeue --partition=blanca-qsmicrobes
