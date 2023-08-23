@@ -60,6 +60,10 @@ mv *.fasta.out muscleout/.
 cd muscleout/
 
 5. Run trimAL using Load Balancer:
+#Login to Alpine (and switch to /scratch/alpine/identikey, if you were logged into blanca and using /rc_scratch/identikey)
+module load slurm/alpine
+acompile
+
 #Create lb file
 ./create_TrimAL.sh > lb_cmd_trimal
 
