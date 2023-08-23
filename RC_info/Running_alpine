@@ -1,0 +1,6 @@
+module load slurm/alpine
+acompile
+
+#To run jobs on alpine, the following directories can be used: /home/identikey/ , /projects/identikey/ , or /scratch/alpine/identikey/
+
+#You may not use /rc_scratch/identikey/ as you can for blanca
