@@ -95,6 +95,7 @@ conda activate /projects/caqu8258/software/miniconda2/envs/bioperl_v1
 
 
 perl ./combine_fasaln_v2023.pl -o allseqs.fas -of fasta -d ./trimmed/ --expected expected.txt
+#NOTE: if you used any other extensions than fasta.out.trim, the perl script will need to be manually edited to accommodate that.
 
 ###Make new directory, move alignment to that directory
 mkdir raxml
