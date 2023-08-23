@@ -63,7 +63,7 @@ cd muscleout/
 #Create lb file
 ./create_TrimAL.sh > lb_cmd_trimal
 
-#Prepare and run your slurm
+#Prepare and run your slurm (note: using this 2023 version invokes a newer compiled version of trimal)
 sbatch LB_trimal_slurm_2023.sh  
 
 mkdir trimmed
