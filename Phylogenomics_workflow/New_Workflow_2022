@@ -48,6 +48,10 @@ mv *.fasta Single_copy/.
 cd Single_copy/
 
 4. Run muscle5 on all files using Load Balancer:
+#Login to Alpine (and switch to /scratch/alpine/identikey, if you were logged into blanca and using /rc_scratch/identikey)
+module load slurm/alpine
+acompile
+
 #Create lb file
 ./new_create_muscle5.sh > lb_cmd_file
 
@@ -55,9 +59,7 @@ cd Single_copy/
 sbatch LB_muscle_slurm.sh
 
 ####Move .out files to new directory
-#Login to Alpine (and switch to /scratch/alpine/identikey, if you were logged into blanca and using /rc_scratch/identikey)
-module load slurm/alpine
-acompile
+
 
 mkdir muscleout
 mv *.fasta.out muscleout/.
