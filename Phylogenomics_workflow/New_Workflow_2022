@@ -55,6 +55,10 @@ cd Single_copy/
 sbatch LB_muscle_slurm.sh
 
 ####Move .out files to new directory
+#Login to Alpine (and switch to /scratch/alpine/identikey, if you were logged into blanca and using /rc_scratch/identikey)
+module load slurm/alpine
+acompile
+
 mkdir muscleout
 mv *.fasta.out muscleout/.
 cd muscleout/
