@@ -1,0 +1,37 @@
+#12/20/2022 Leotio phylogenomics pipeline v2.1  (aka v3) /pl/active/fungi1/Leotiomycetes/2022/October_analysis
+
+cat Pseudophacidium_ledi.proteins.fa | sed 's/>Pseudoledi_/>Pseudoledi|g/g' > Pseudoledi.names.fas
+
+cat Collophora_rubra.proteins.fa | sed 's/>Collorub_/>Collorub|g/g' > Collorub.names.fas
+
+#Proteinortho
+
+sbatch dec22_v3_leotio_protortho_slurm.sh
+
+#source ~/.proto6
+#proteinortho -clean -project=v3_dec22_leot -cpus=$SLURM_NTASKS Acema.names.fas Amore.names.fas Amyenc.names.fas Antapell.names.fas Aotenoth.names.fas Ascsa.names.fas Bissp.names.fas Blugr.names.fas Botci.names.fas Bulin.names.fas Cadsp.names.fas Calmar.names.fas Chaetobl.names.fas Chalo.names.fas Chlaerug.names.fas Clausatr.names.fas Cocst.names.fas Cudcirc.names.fas Duranemo.names.fas Duranpse.names.fas Elyde.names.fas Erynec.names.fas Gelatsiam.names.fas Glalo.names.fas Golci.names.fas Greab.names.fas Holwmuc.names.fas Hymvar.names.fas Lacsu.names.fas Lepor.names.fas Leptod.names.fas Lopnit.names.fas Lorju.names.fas Marbr.names.fas Marthpha.names.fas Melbi.names.fas Micruf.names.fas Mitrpal.names.fas Neucr.names.fas Oidma.names.fas Pezweb.names.fas Phacilac.names.fas Phimu.names.fas Phisc.names.fas Piliacer.names.fas Pleurnic.names.fas Potebpyr.names.fas Propfar.names.fas Pseel.names.fas Pseudest.names.fas Pseudpan.names.fas Rhesp.names.fas Rhier.names.fas Rosrhod.names.fas Rutfi.names.fas Sclsc.names.fas Spafl.names.fas Stampers.names.fas Themi.names.fas Thest.names.fas Xenopyri.names.fas Xylhe.names.fas Zalva.names.fas Allantocyti.names.fas Allantolyco.names.fas Claussp.names.fas Collorub.names.fas Pseudoledi.names.fas Pseudezon.names.fas
+
+#Get single copy, 100% presence clusters
+
+grap $'^69\t69
+
+perl ../Old_scripts_docs/src_proteinortho_grab_proteins.pl  -exact -tofiles new_all_73.tsv Acema.names.fas Amore.names.fas Amyenc.names.fas Antapell.names.fas Aotenoth.names.fas Ascsa.names.fas Bissp.names.fas Blugr.names.fas Botci.names.fas Bulin.names.fas Cadsp.names.fas Calmar.names.fas Chaetobl.names.fas Chalo.names.fas Chlaerug.names.fas Clausatr.names.fas Cocst.names.fas Cudcirc.names.fas Duranemo.names.fas Duranpse.names.fas Elyde.names.fas Erynec.names.fas Gelatsiam.names.fas Glalo.names.fas Golci.names.fas Greab.names.fas Holwmuc.names.fas Hymvar.names.fas Lacsu.names.fas Lepor.names.fas Leptod.names.fas Lopnit.names.fas Lorju.names.fas Marbr.names.fas Marthpha.names.fas Melbi.names.fas Micruf.names.fas Mitrpal.names.fas Neucr.names.fas Oidma.names.fas Pezweb.names.fas Phacilac.names.fas Phimu.names.fas Phisc.names.fas Piliacer.names.fas Pleurnic.names.fas Potebpyr.names.fas Propfar.names.fas Pseel.names.fas Pseudest.names.fas Pseudpan.names.fas Rhesp.names.fas Rhier.names.fas Rosrhod.names.fas Rutfi.names.fas Sclsc.names.fas Spafl.names.fas Stampers.names.fas Themi.names.fas Thest.names.fas Xenopyri.names.fas Xylhe.names.fas Zalva.names.fas Allantocyti.names.fas Allantolyco.names.fas Claussp.names.fas Collorub.names.fas Pseudoledi.names.fas Pseudezon.names.fas
+
+
+
+
+
+
+
+
+perl ./combine_fasaln_v2019.pl -o allseqs.fas -of fasta -d ./trimmed/ --expected expected.txt
+
+
+
+
+#Get single copy, 100% presence clusters
+
+grep $'^73\t73
+
+perl ../Old_scripts_docs/src_proteinortho_grab_proteins.pl  -exact -tofiles new_all_73.tsv Acema.names.fas Amore.names.fas Amyenc.names.fas Antapell.names.fas Aotenoth.names.fas Ascsa.names.fas Bissp.names.fas Blugr.names.fas Botci.names.fas Bulin.names.fas Cadsp.names.fas Calmar.names.fas Chaetobl.names.fas Chalo.names.fas Chlaerug.names.fas Clausatr.names.fas Cocst.names.fas Cudcirc.names.fas Duranemo.names.fas Duranpse.names.fas Elyde.names.fas Erynec.names.fas Gelatsiam.names.fas Glalo.names.fas Golci.names.fas Greab.names.fas Holwmuc.names.fas Hymvar.names.fas Lacsu.names.fas Lepor.names.fas Leptod.names.fas Lopnit.names.fas Lorju.names.fas Marbr.names.fas Marthpha.names.fas Melbi.names.fas Micruf.names.fas Mitrpal.names.fas Neucr.names.fas Oidma.names.fas Pezweb.names.fas Phacilac.names.fas Phimu.names.fas Phisc.names.fas Piliacer.names.fas Pleurnic.names.fas Potebpyr.names.fas Propfar.names.fas Pseel.names.fas Pseudest.names.fas Pseudpan.names.fas Rhesp.names.fas Rhier.names.fas Rosrhod.names.fas Rutfi.names.fas Sclsc.names.fas Spafl.names.fas Stampers.names.fas Themi.names.fas Thest.names.fas Xenopyri.names.fas Xylhe.names.fas Zalva.names.fas Allantocyti.names.fas Allantolyco.names.fas Claussp.names.fas Collorub.names.fas Pseudoledi.names.fas Pseudezon.names.fas Leotlub.names.fas Alatoacum.names.fas Greminfest.names.fas Varicoelod.names.fas
+
